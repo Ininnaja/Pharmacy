@@ -1,0 +1,41 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+.flexbox {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.item {
+    display: block;
+    box-sizing: border-box;
+    width: 50%;
+}
+.item-1 {
+    background-color: rgb(172, 61, 61);
+    display: block;
+    box-sizing: border-box;
+    width: 7%;
+}
+.item-5 {
+    background-color: rgb(146, 252, 119);
+    display: block;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+}
+
+.content {
+    padding: 30px;
+    text-align: center;
+}
+
+.img {
+    padding-top: 6%;
+    width: 100%;
+}
+
+

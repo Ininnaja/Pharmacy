@@ -1,0 +1,275 @@
+        /* Sidebar styling */
+        .sidebar {
+            height: 100vh;
+            width: 220px;
+            background-color: #E0FBFF;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px;
+            border-right: 1px solid #ddd;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Hidden sidebar (off-screen) */
+        .sidebar.hidden {
+            transform: translateX(-220px);
+        }
+
+        .sidebar .logo {
+            border-radius: 50%;
+            border: 3px solid gray;
+            width: 80px;
+            height: 80px;
+            overflow: hidden;
+        }
+
+        .sidebar .logo img {
+            width: 100%;
+            height: auto;
+        }
+
+        .sidebar .logo1 {
+            margin-top: 50px;
+            background-color: white;
+            border-radius: 30px;
+            padding: 5px;
+            width: 110px;
+            height: auto;
+            display: block;
+        }
+
+        .sidebar .logo1 img {
+            width: 50%;
+            height: auto;
+        }
+
+        .sidebar a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            width: 100%;
+            text-align: center;
+            margin: 15px 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .sidebar .logo1:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        .sidebar .logo2:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .main-content {
+            margin-left: 220px;
+            padding: 30px;
+            transition: margin-left 0.3s ease-in-out;
+        }
+
+        /* Main content shift when sidebar hidden */
+        .main-content.shifted {
+            margin-left: 0;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+            color: #0071AE;
+        }
+
+        /* Hamburger button styling */
+        .hamburger {
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .search-input {
+            border: 2px solid #ccc;
+            border-radius: 30px;
+            padding-left: 40px;
+            background-image: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/svgs/solid/search.svg');
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            background-size: 20px;
+            height: 45px;
+            font-size: 16px;
+        }
+
+        .medicine-card {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .medicine {
+            background-color: #E0FBFF;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(50% - 40px);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+        }
+
+        .medicine-info {
+            max-width: 70%;
+        }
+
+        .medicine-actions {
+            text-align: right;
+        }
+
+        .medicine h2 {
+            color: #0071AE;
+            font-weight: bold;
+        }
+
+        .medicine-end {
+            display: flex;
+            gap: 15px;
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+        }
+
+        .medicine-end img {
+            width: 30px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .medicine-end img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Custom HR Styling */
+        .custom-hr {
+            height: 2.5px;
+            background-color: gray;
+            border: none;
+            margin: 20px 0;
+        }
+
+        /* Button hover effect */
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .medicine {
+            background-color: #E0FBFF;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .pic {
+            display: flex;
+            background: white;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            margin-right: 20px;
+            /* border: 2px solid gray; */
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            /* กรอบรูปภาพ */
+            border-radius: 10px;
+            /* มุมโค้ง */
+        }
+
+        .pic img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 5px;
+        }
+
+        .medicine-info {
+            flex-grow: 1;
+            max-width: calc(100% - 120px);
+            /* Reduce width to accommodate image */
+        }
+
+        .medicine h2 {
+            color: #0071AE;
+            font-weight: bold;
+        }
+
+        .sidebar .logo2 {
+            background-color: white;
+            border-radius: 30px;
+            margin-top: 50px;
+            padding: 5px;
+            width: 110px;
+            overflow: hidden;
+            height: auto;
+            display: block;
+        }
+        .sidebar .logo2 img {
+            width: 50%;
+            height: auto;
+        }
+
+        .sidebar .logo3 {
+
+            border-radius: 50px;
+            margin-top: 150px;
+
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+
+        }
+
+        .sidebar .logo3 img {
+            width: 100%;
+            height: auto;
+        }
+
+        .sidebar .logo4 {
+
+
+            margin-top: 20px;
+
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+        }
+
+        .sidebar .logo4 img {
+            width: 100%;
+            height: auto;
+        }
+
+        .custom-hr {
+            height: 2.5px;
+            /* ความหนาของเส้น */
+            background-color: #0071AE;
+            /* สีของเส้น */
+            border: none;
+            /* ไม่มีเส้นขอบ */
+            margin: 20px 0;
+            /* เว้นระยะด้านบนและล่าง */
+        }
